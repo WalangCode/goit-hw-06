@@ -36,16 +36,14 @@
           >
           <ul class="list">
             <li class="nav-list-item">
-              <a href="./index.html" class="active nav-link-list link"
-                >Studio</a
-              >
-            </li>
+              <a href="./index.html" class="active nav-link-list link">Studio</a>
+                          </li>
             <li>
               <a href="./portfolio.html" class="nav-link-list link"
                 >Portfolio</a
               >
             </li>
-            <li><a href="" class="nav-link-list link">Contacts</a></li>
+            <li><a href="" class="nav-link-list link ">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
@@ -69,9 +67,7 @@
       <section class="sectionone">
         <div class="container">
           <h1 class="section-header">Effective Solutions for Your Business</h1>
-          <button type="button" class="button" data-modal-open>
-            Order Service
-          </button>
+          <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- section2 -->
@@ -365,6 +361,7 @@
                 <h3 class="section-list section-d-header">Daniel Wilson</h3>
                 <p class="section-par-team">UI Designer</p>
                 <ul class="social-media">
+            
                   <li class="socmed">
                     <a href="" class="socmed-link">
                       <svg
@@ -512,8 +509,8 @@
             digital marketing & growth solutions.
           </p>
         </div>
-
-        <div>
+        
+        <div class="social-con">
           <p class="footer-socmed">Social media</p>
           <ul class="footer-socmed-list">
             <!-- Insta -->
@@ -525,7 +522,7 @@
                   width="24"
                   height="24"
                 >
-                  <use href="./images/icons.svg#foot-insta"></use>
+                <use href="./images/icons.svg#foot-insta"></use>
                 </svg>
               </a>
             </li>
@@ -539,7 +536,7 @@
                   width="24"
                   height="24"
                 >
-                  <use href="./images/icons.svg#foot-twit"></use>
+                <use href="./images/icons.svg#foot-twit"></use>
                 </svg>
               </a>
             </li>
@@ -553,7 +550,7 @@
                   width="24"
                   height="24"
                 >
-                  <use href="./images/icons.svg#foot-fb"></use>
+                <use href="./images/icons.svg#foot-fb"></use>
                 </svg>
               </a>
             </li>
@@ -567,11 +564,27 @@
                   width="24"
                   height="24"
                 >
-                  <use href="./images/icons.svg#foot-link"></use>
+                <use href="./images/icons.svg#foot-link"></use>
                 </svg>
               </a>
-            </li>
+            </li>  
+
           </ul>
+        </div>
+        <div class="form-container">
+          <p class="form-par">Subscribe</p>
+          <form class="form">
+            <label class="label">
+              <input type="email" placeholder="E-mail" class="input" name="form-input"/>
+            </label>
+            <button type="submit" class="form-button">
+              Subscribe
+              <svg width="24" height="24" class="send-svg">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+          
         </div>
       </div>
     </footer>
@@ -584,9 +597,66 @@
             width="8"
             height="8"
           >
-            <use href="./images/icons.svg#modal-close"></use>
+          <use href="./images/icons.svg#modal-close"></use>
+            
           </svg>
         </button>
+        <p class="modal-par">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="modal-form">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="modal-icon">
+              <input id="user-name" name="user-name" type="text" class="modal-input">
+              <svg width="18" height="24" class="modal-svg">
+                <use href=./images/icons.svg#person></use>
+              </svg>
+            </div>
+            
+          </div>
+          <div class="modal-form">
+            <label class="modal-label" for="user-name">Phone</label>
+            <div class="modal-icon">
+              <input id="user-tel" name="user-name" type="text" class="modal-input">
+              <svg width="18" height="24" class="modal-svg">
+                <use href=./images/icons.svg#phone></use>
+              </svg>
+            </div>
+            </div>
+          <div class="modal-form">
+            <label class="modal-label" for="user-name">Email</label>
+            <div class="modal-icon">
+              <input id="user-mail" name="user-name" type="text" class="modal-input">
+              <svg width="18" height="24" class="modal-svg">
+                <use href=./images/icons.svg#email></use>
+              </svg>
+            </div>
+            
+          </div>
+          <div class="modal-comment">
+            <label for="user-comment" class="modal-label">Comment</label>
+            <textarea id="user-comment" name="user-comment" placeholder="Text input" class="modal-textarea"></textarea>
+          </div>
+          <div class="modal-check">
+            
+            <input id="user-privacy" type="checkbox" value="true" name="user-privacy" class="user-privacy-input visually-hidden">
+            <label class="label-privacy" for="user-privacy">
+              <span class="user-privacy-span">
+                <svg
+                  class="privacy-svg"
+                  width="10"
+                  height="8"
+                 >
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the 
+              <a href="" class="modal-link">Privacy Policy</a>
+            </label>
+          </div>
+          
+          <button class="modal-button">Send</button>
+          
+        </form>
       </div>
     </div>
 
